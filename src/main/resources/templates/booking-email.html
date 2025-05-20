@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Booking Confirmation</title>
+</head>
+<body>
+<h2>Booking Confirmation</h2>
+<p>Hi <strong th:text="${userName}">User</strong>,</p>
+<p>Your booking is confirmed with the following details:</p>
+
+<ul>
+    <li><strong>Booking ID:</strong> <span th:text="${bookingId}"></span></li>
+    <li><strong>Email:</strong> <span th:text="${userEmail}"></span></li>
+    <li><strong>Phone:</strong> <span th:text="${phoneNumber}"></span></li>
+    <li><strong>Resume:</strong> <a th:href="${resumeLink}" th:text="${resumeLink}"></a></li>
+    <li><strong>Target Role:</strong> <span th:text="${targetRole}"></span></li>
+    <li><strong>Service:</strong> <span th:text="${selectedService}"></span></li>
+    <li><strong>Date:</strong> <span th:text="${date}"></span></li>
+    <li><strong>Time:</strong> <span th:text="${time}"></span></li>
+    <li><strong>Note:</strong> <span th:text="${additionalNote}"></span></li>
+</ul>
+</body>
+</html>
